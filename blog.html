@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maxwell Scientific - Blog</title>
+    <link rel="stylesheet" type="text/css" href="maxwell.css" />
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Maxwell Scientific Logo" />
+            </a>
+            <nav class="navbar">
+                <button class="hamburger" aria-label="Toggle navigation">
+                    &#9776;
+                </button>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a>Kits</a>
+                        <ul class="dropdown">
+                            <li><a href="astro.html">Astronomy</a></li>
+                            <li><a href="chem.html">Chemistry</a></li>
+                            <li><a href="elect.html">Electronics</a></li>
+                            <li><a href="eng.html">Engineering</a></li>
+                            <li><a href="physics.html">Physics</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li class="active"><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr /><br />
+        <main>
+            <section class="blog-section">
+                <h1>Maxwell Scientific Blog</h1>
+                <article class="blog-post">
+                    <h2>Science for kids: make a solar system to scale at home</h2>
+                    <p class="blog-date">Published: November 15, 2024</p>
+                    <p>
+                        You can create your own scale model using materials from around your home. It is a great activity to do with young people… 
+                        or the young at heart. We were able to complete it in less than an hour but if you don't have the materials on hand it will take longer.  
+                    </p>
+                    <a href="https://cosmosmagazine.com/space/astronomy/science-for-kids-solar-system-model/" class="read-more" target="_blank">Read More...</a>
+                </article>
+
+                <article class="blog-post">
+                    <h2>Best microscopes for kids 2024</h2>
+                    <p class="blog-date">Published: November 15, 2024</p>
+                    <p>
+                        The best microscopes for kids allow children to discover the world in miniature. As these naturally curious little scientists journey 
+                        around the big wide world we see them inevitably become interested in the very largest and very smallest creatures in the natural world, 
+                        namely: dinosaurs and bugs.
+                    </p>
+                    <a href="https://www.livescience.com/best-microscopes-for-kids.html" class="read-more" target="_blank">Read More...</a>
+                </article>
+
+                <article class="blog-post">
+                    <h2>Science workshop in Salinas puts tools in kids' hands</h2>
+                    <p class="blog-date">Published: October 28, 2024</p>
+                    <p>
+                        Outside the Cesar Chavez Library in Salinas there was a buzz of activity next to a vibrantly colored bus emblazoned with the words: 
+                        "Salinas Community Science Workshop on....Wheels."
+                    </p>
+                    <a href="https://www.thecalifornian.com/story/news/local/2024/10/28/science-workshop-bus-in-salinas-ca-puts-tools-in-kids-hands/75808857007/" class="read-more" target="_blank">Read More...</a>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <address>
+                <p>Maxwell Scientific<br />
+                205 East Nordheim Drive, Marion, IL 62959<br />
+                Phone: (800) 555-2191 | Fax: (812) 555-2192<br />
+                &#169; 2024 Maxwell Scientific | <a href="mailto:info@maxwellscientific.com">info@maxwellscientific.com</a></p>
+            </address>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".navbar ul");
+
+            hamburger.addEventListener("click", function () {
+                navMenu.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+</html>

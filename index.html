@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maxwell Scientific</title>
+    <link rel="stylesheet" type="text/css" href="maxwell.css" />
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Maxwell Scientific Logo" />
+            </a>
+            <nav class="navbar">
+                <button class="hamburger" aria-label="Toggle navigation">
+                    &#9776;
+                </button>
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li>
+                        <a>Kits</a>
+                        <ul class="dropdown">
+                            <li><a href="astro.html">Astronomy</a></li>
+                            <li><a href="chem.html">Chemistry</a></li>
+                            <li><a href="elect.html">Electronics</a></li>
+                            <li><a href="eng.html">Engineering</a></li>
+                            <li><a href="physics.html">Physics</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr /><br />
+        <main>
+            <section class="hero">
+                <img src="img1.jpg" alt="Scientist in a lab" />
+                <div class="hero-text">
+                    <h2>Who We Are</h2>
+                    <p>
+                        Maxwell Scientific is an online retailer specializing in science kits and educational products designed to inspire curiosity and learning. 
+                        We offer a wide range of hands-on kits and experiments for students, teachers, and science enthusiasts of all ages.
+                    </p>
+                </div>
+            </section>
+            <section class="hero reverse">
+                <img src="img2.jpg" alt="Kid in a lab" />
+                <div class="hero-text" style="padding-right: 1.5rem;">
+                    <h2>Our Science Kits</h2>
+                    <p> 
+                        We offer a variety of science kits for students of all ages. These include astronomy kits with telescopes, chemistry kits for safe 
+                        experiments, electronics kits to build circuits, engineering kits for creative projects, and physics kits to explore motion and forces. 
+                        Each kit is designed to make learning science fun and interactive.
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <address>
+                <p>Maxwell Scientific<br />
+                205 East Nordheim Drive, Marion, IL 62959<br />
+                Phone: (800) 555-2191 | Fax: (812) 555-2192<br />
+                &#169; 2024 Maxwell Scientific | <a href="mailto:info@maxwellscientific.com">info@maxwellscientific.com</a></p>
+            </address>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".navbar ul");
+    
+            hamburger.addEventListener("click", function () {
+                navMenu.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+</html>

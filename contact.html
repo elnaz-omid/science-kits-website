@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Maxwell Scientific</title>
+    <link rel="stylesheet" type="text/css" href="maxwell.css" />
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Maxwell Scientific Logo" />
+            </a>
+            <nav class="navbar">
+                <button class="hamburger" aria-label="Toggle navigation">
+                    &#9776;
+                </button>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a>Kits</a>
+                        <ul class="dropdown">
+                            <li><a href="astro.html">Astronomy</a></li>
+                            <li><a href="chem.html">Chemistry</a></li>
+                            <li><a href="elect.html">Electronics</a></li>
+                            <li><a href="eng.html">Engineering</a></li>
+                            <li><a href="physics.html">Physics</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="contact.html">Contact Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr />
+        <br />
+        <main>
+            <section class="contact-section">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or need assistance, feel free to reach out using the form below.</p>
+                <form class="contact-form" action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Full Name" required="required" />
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email Address" required="required" />
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject of Your Message" />
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required="required"></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+				<address>
+					<p>Maxwell Scientific<br />
+					205 East Nordheim Drive, Marion, IL 62959<br />
+					Phone: (800) 555-2191 | Fax: (812) 555-2192<br />
+					&#169; 2024 Maxwell Scientific | <a href="mailto:info@maxwellscientific.com">info@maxwellscientific.com</a></p>
+				</address>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".navbar ul");
+    
+            hamburger.addEventListener("click", function () {
+                navMenu.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+</html>
